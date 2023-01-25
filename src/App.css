@@ -1,0 +1,113 @@
+.App {
+  text-align: center;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.menu {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  align-content: center;
+  background-color: lightgreen;
+}
+
+html {
+  background-color: #282c34;
+  text-align: center;
+}
+
+.win-header {
+  color: #bbb;
+}
+
+.poster-container {
+  width: 195px;
+  height: 285px;
+  border-radius: 15px;
+  cursor: pointer;
+  perspective: 600;
+  position: relative;
+  margin: 1px;
+  display: inline-flex;
+
+
+}
+
+.poster {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+  top: 0%;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.poster .pic {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.poster .back {
+  transform: rotateY(180deg);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+
+}
+
+.cards {
+  margin-top: 10px;
+  background-color: #282c34;
+  border: 8px solid #A71D31
+}
+
+
+a.btn {
+  color: red;
+}
+
+.won-banner {
+  background: grey;
+  color: red;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.reset-button {
+  color: #A71D31;
+  position: absolute;
+  bottom: 0px;
+  left: 610px;
+
+}
